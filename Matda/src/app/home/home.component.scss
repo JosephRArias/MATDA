@@ -1,0 +1,45 @@
+*{
+  background-color: #ffffff;
+}
+
+nz-content {
+  padding: 0 50px;
+  text-align: center;
+  display: block;
+  margin-top: 10%;
+}
+#Logo{
+  width: 313.5px;
+  height: 122.3px;
+
+}
+#start{
+  width: 400px;
+  height: 59.4px;
+  background-color: #98C93D;
+  border: none;
+  margin-top: 30px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+}
+#settings{
+  background-color: #EA3C53;
+  font-family: 'Nunito', sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  margin-top: 30px;
+  width: 200.8px;
+  height: 53.4px;
+}
+#question{
+  width: 51.4px;
+  height: 51.4px;
+  margin-left: 731px;
+}
+#question:hover{
+  cursor: pointer;
+}
+nz-layout:last-child {
+  margin: 0;
+}
