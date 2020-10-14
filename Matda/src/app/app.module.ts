@@ -14,14 +14,20 @@ import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { MatchGuard } from './guards/match.guard';
-
+import { NzBreadCrumbModule } from 'ng-zorro-antd/breadcrumb';
+import { NzSpaceModule } from 'ng-zorro-antd/space';
+import { NzRadioModule } from 'ng-zorro-antd/radio';
+import { MatchInProcessComponent } from './match-in-process/match-in-process.component';
+import { TerminateMatchComponent } from './terminate-match/terminate-match.component';
 registerLocaleData(en);
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    MatchConfigurationComponent
+    MatchConfigurationComponent,
+    MatchInProcessComponent,
+    TerminateMatchComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,7 +36,10 @@ registerLocaleData(en);
     HttpClientModule,
     BrowserAnimationsModule,
     NzLayoutModule,
-    NzButtonModule
+    NzButtonModule,
+    NzBreadCrumbModule,
+    NzSpaceModule,
+    NzRadioModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }, MatchGuard],
   bootstrap: [AppComponent]

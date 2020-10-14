@@ -11,14 +11,12 @@
 #Logo{
   width: 313.5px;
   height: 122.3px;
-
 }
 #start{
   width: 400px;
   height: 59.4px;
   background-color: #98C93D;
   border: none;
-  margin-top: 30px;
   font-family: 'Nunito', sans-serif;
   font-size: 32px;
   font-weight: 800;
@@ -28,7 +26,6 @@
   font-family: 'Nunito', sans-serif;
   font-size: 32px;
   font-weight: 800;
-  margin-top: 30px;
   width: 200.8px;
   height: 53.4px;
 }
@@ -36,6 +33,7 @@
   width: 51.4px;
   height: 51.4px;
   margin-left: 731px;
+  display: inline-block;
 }
 #question:hover{
   cursor: pointer;
@@ -52,7 +50,6 @@ nz-layout:last-child {
 nz-content {
   color: #fff;
   min-height: 120px;
-  line-height: 120px;
 }
 
 nz-layout {

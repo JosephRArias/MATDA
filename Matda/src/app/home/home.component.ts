@@ -10,13 +10,16 @@ import { Router } from '@angular/router';
 export class HomeComponent implements OnInit {
 
   constructor(private matchService: MatchService, private router: Router) { }
-
+  size: number;
   ngOnInit(): void {
+    this.size = 8;
   }
 
   onStart(state: boolean){
     this.matchService.setMatchState(state);
     this.router.navigate(['/match-configuration']);
   }
-
+  onSettings(){
+    this.router.navigate(['/layout']);
+  }
 }

@@ -1,0 +1,56 @@
+*{
+  background-color: #ffffff;
+}
+
+nz-header,
+nz-footer {
+  text-align: center;
+}
+
+nz-footer {
+  line-height: 1.5;
+}
+
+nz-sider {
+  color: #fff;
+  line-height: 120px;
+  text-align: right;
+}
+nz-header{
+  min-height: 160px;
+  line-height: 100px;
+}
+nz-content{
+  margin-top: 50px;
+  min-height: 200px;
+}
+
+#Logo{
+  width: 313.5px;
+  height: 122.3px;
+  margin-top: 30px;
+}
+#Cross{
+  padding: 30px;
+}
+#Cross:hover{
+  cursor: pointer;
+}
+label{
+  width: 156px;
+  height: 44px;
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 54.56px;
+  color: #000000;
+}
+:host {
+  text-align: center;
+}
+#circles{
+  width: 538.7px;
+  height: 59.7px;
+  margin-top: 40px;
+}

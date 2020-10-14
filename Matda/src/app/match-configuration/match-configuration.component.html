@@ -1,1 +1,43 @@
-<p>match-configuration works!</p>
+<nz-layout>
+    <nz-layout>
+      <nz-header><img src="../../assets/MatdaLogo.png" id="Logo"></nz-header>
+      <nz-content>
+        <label for="Difficulty">Dificultad</label>
+        <nz-space [nzSize]="size" nzDirection = "horizontal">
+          <nz-space-item>
+              <button nz-button nzType="primary" nzShape="round" id="easy" (click) = "changeDifficulty('easy')" [ngClass]="{
+                'clicked' : selected == 'easy'
+              }">Facil</button>
+          </nz-space-item>
+          <nz-space-item>
+              <button nz-button nzType="primary" nzShape="round" id="medium" (click) = "changeDifficulty('medium')"
+              [ngClass]="{
+                'clicked' : selected == 'medium'
+              }">Medio</button>
+          </nz-space-item>
+          <nz-space-item>
+              <button nz-button nzType="primary" nzShape="round" id="difficult" (click) = "changeDifficulty('difficult')"
+              [ngClass]="{
+                'clicked' : selected == 'difficult'
+              }">Dificil</button>
+          </nz-space-item>
+        </nz-space>
+        <br>
+        <label for="Time">Tiempo</label>
+        <nz-space [nzSize]="14" nzDirection = "horizontal" id="time">
+            <nz-space-item>
+                <button nz-button nzType="primary" nzShape="round" id="add" (click) = "modifyTimer('add')"><img src="../../assets/VectorAddSign.png" id="addSign"></button>
+            </nz-space-item>
+            <label for="Timer">{{timer}} seg</label>
+            <nz-space-item>
+                <button nz-button nzType="primary" nzShape="round" id="sustract" (click) = "modifyTimer('sus')"><img src="../../assets/VectorSustractSign.png" id="sustractSign"></button>
+            </nz-space-item>
+        </nz-space>
+        <br>
+        <button nz-button nzType="primary" nzShape="round" id="start" (click)="onStart()">INICIAR PARTIDA</button>
+      </nz-content>
+    </nz-layout>
+    <nz-sider>
+        <img src="../../assets/QuestionMark.png" id="question">
+    </nz-sider>
+</nz-layout>

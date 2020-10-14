@@ -3,10 +3,14 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { MatchConfigurationComponent } from './match-configuration/match-configuration.component';
 import { MatchGuard } from './guards/match.guard';
+import { MatchInProcessComponent } from './match-in-process/match-in-process.component';
+import { TerminateMatchComponent } from './terminate-match/terminate-match.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
-  {path: 'match-configuration', component: MatchConfigurationComponent, canActivate: [MatchGuard]}
+  {path: 'match-configuration', component: MatchConfigurationComponent, canActivate: [MatchGuard]},
+  {path: 'match-process', component: MatchInProcessComponent, canActivate: [MatchGuard]},
+  {path: 'terminate-match', component: TerminateMatchComponent, canActivate: [MatchGuard]}
 ];
 
 @NgModule({
