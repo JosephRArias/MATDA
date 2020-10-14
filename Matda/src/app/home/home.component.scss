@@ -2,12 +2,12 @@
   background-color: #ffffff;
 }
 
-nz-content {
+/*nz-content {
   padding: 0 50px;
   text-align: center;
   display: block;
   margin-top: 10%;
-}
+}*/
 #Logo{
   width: 313.5px;
   height: 122.3px;
@@ -43,3 +43,19 @@ nz-content {
 nz-layout:last-child {
   margin: 0;
 }
+
+:host {
+  text-align: center;
+}
+
+
+nz-content {
+  color: #fff;
+  min-height: 120px;
+  line-height: 120px;
+}
+
+nz-layout {
+  margin-bottom: 48px;
+}
+

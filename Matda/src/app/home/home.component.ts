@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
 
   onStart(state: boolean){
     this.matchService.setMatchState(state);
-    this.router.navigate['/match-configuration'];
+    this.router.navigate(['/match-configuration']);
   }
 
 }
