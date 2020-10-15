@@ -19,6 +19,7 @@ import { NzSpaceModule } from 'ng-zorro-antd/space';
 import { NzRadioModule } from 'ng-zorro-antd/radio';
 import { MatchInProcessComponent } from './match-in-process/match-in-process.component';
 import { TerminateMatchComponent } from './terminate-match/terminate-match.component';
+import { OperationScreenComponent } from './operation-screen/operation-screen.component';
 registerLocaleData(en);
 
 @NgModule({
@@ -28,6 +29,7 @@ registerLocaleData(en);
     MatchConfigurationComponent,
     MatchInProcessComponent,
     TerminateMatchComponent,
+    OperationScreenComponent,
   ],
   imports: [
     BrowserModule,

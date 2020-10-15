@@ -1,13 +1,15 @@
 <nz-layout>
   <nz-layout>
-    <nz-header><img src="../../assets/MatdaLogo.png" id="Logo"></nz-header>
+    <nz-header>
+      <img src="../../assets/FrameCross.png" id="Cross" (click) = "onLeave()">
+    </nz-header>
     <nz-content>
+      <img src="../../assets/MatdaLogo.png" id="Logo">
+      <br>
       <label for="Process">Partida en curso...</label>
-      <img src="../../assets/FrameCircles.png" id="circles">
+      <br>
+      <img src="../../assets/FrameCircles.png" id="circles" >
     </nz-content>
 
   </nz-layout>
-  <nz-sider>
-    <img src="../../assets/FrameCross.png" id="Cross" (click) = "onLeave()">
-  </nz-sider>
 </nz-layout>

@@ -1,0 +1,18 @@
+<nz-layout>
+<nz-content [ngClass]="{
+  'add' : selected == 'SR',
+  'multiply' : selected == 'MD',
+  'mix' : selected == 'Mix',
+  'lib' : selected == 'Lib'
+}">
+<div id="label">
+<label for="Type" *ngIf="selected == 'SR'">SUMA O RESTA</label>
+<label for="Type" *ngIf="selected == 'MD'">MULTIPLICACIÓN O DIVISIÓN</label>
+<label for="Type" *ngIf="selected == 'MIX'">MIXTA</label>
+<label for="Type" *ngIf="selected == 'LIB'">LIBRE</label>
+</div>
+<div class="card">
+  <img src="../../assets/GroupClock.png">
+<labeL for="Time" id="timer">{{this.timer.timeLeft}}</labeL>
+</div></nz-content>
+</nz-layout>

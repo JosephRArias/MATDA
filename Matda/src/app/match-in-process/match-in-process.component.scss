@@ -2,36 +2,33 @@
   background-color: #ffffff;
 }
 
-nz-header,
-nz-footer {
-  text-align: center;
-}
-
 nz-footer {
   line-height: 1.5;
 }
-
-nz-sider {
-  color: #fff;
-  line-height: 120px;
-  text-align: right;
-}
 nz-header{
-  min-height: 160px;
-  line-height: 100px;
+  min-height: 50px;
+  line-height: 50px;
 }
-nz-content{
-  margin-top: 50px;
-  min-height: 200px;
+nz-content {
+  color: #fff;
+  min-height: 120px;
 }
+
+nz-layout {
+  margin-bottom: 48px;
+}
+
 
 #Logo{
   width: 313.5px;
   height: 122.3px;
-  margin-top: 30px;
+  margin-bottom: 30px;
 }
 #Cross{
-  padding: 30px;
+  width: 51.4px;
+  height: 51.4px;
+  margin-left: 731px;
+  display: inline-block;
 }
 #Cross:hover{
   cursor: pointer;

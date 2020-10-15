@@ -1,0 +1,41 @@
+@import "../../variables";
+
+nz-content {
+  min-height: 488px;
+}
+
+.add{
+  background-color: $background-suma;
+}
+.multiply{
+  background-color: $background-multiply;
+}
+.card{
+  border-radius: 25px;
+  height: 304.70001220703125px;
+  width: 767.199951171875px;
+  background: #FFFFFF;
+  margin-left: 120px;
+  margin-top: 3%;
+}
+label{
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 70px;
+  color: #FFFFFF;
+
+}
+#label{
+  text-align: center;
+}
+img{
+  margin-left: 2.38%;
+  margin-bottom: 10px;
+}
+#timer{
+  color: #000000;
+  font-size: 30px;
+  margin-left: 10px;
+}

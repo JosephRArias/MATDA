@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { TimerService } from '../services/timer.service';
 
 @Component({
   selector: 'app-match-configuration',
@@ -10,26 +11,27 @@ export class MatchConfigurationComponent implements OnInit {
 
   size: number;
   selected: string;
-  timer: number;
-  constructor(private router: Router) { }
+  time: number;
+  constructor(private router: Router, private timer: TimerService) { }
 
   ngOnInit(): void {
     this.size = 14;
     this.selected = 'easy';
-    this.timer = 25;
+    this.time = 25;
   }
   changeDifficulty(difficulty: string){
     this.selected = difficulty;
   }
   modifyTimer(operation: string){
     if(operation == 'add'){
-      this.timer += 5;
+      this.time += 5;
     }
     else{
-      this.timer -= 5;
+      this.time -= 5;
     }
   }
   onStart(){
     this.router.navigate(['/match-process']);
+    this.timer.setTimer(this.time);
   }
 }

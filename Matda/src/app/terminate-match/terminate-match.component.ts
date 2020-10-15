@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-terminate-match',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TerminateMatchComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
+  goToPage(route: string){
+    if(route == 'process'){
+      this.router.navigate(['/match-process']);
+    }else{
+      this.router.navigate(['/']);
+    }
+  }
 }

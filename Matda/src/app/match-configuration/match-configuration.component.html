@@ -1,7 +1,11 @@
 <nz-layout>
     <nz-layout>
-      <nz-header><img src="../../assets/MatdaLogo.png" id="Logo"></nz-header>
+      <nz-header>
+        <img src="../../assets/QuestionMark.png" id="question">
+      </nz-header>
       <nz-content>
+          <img src="../../assets/MatdaLogo.png" id="Logo">
+          <br>
         <label for="Difficulty">Dificultad</label>
         <nz-space [nzSize]="size" nzDirection = "horizontal">
           <nz-space-item>
@@ -28,7 +32,7 @@
             <nz-space-item>
                 <button nz-button nzType="primary" nzShape="round" id="add" (click) = "modifyTimer('add')"><img src="../../assets/VectorAddSign.png" id="addSign"></button>
             </nz-space-item>
-            <label for="Timer">{{timer}} seg</label>
+            <label for="Timer">{{time}} seg</label>
             <nz-space-item>
                 <button nz-button nzType="primary" nzShape="round" id="sustract" (click) = "modifyTimer('sus')"><img src="../../assets/VectorSustractSign.png" id="sustractSign"></button>
             </nz-space-item>
@@ -37,7 +41,4 @@
         <button nz-button nzType="primary" nzShape="round" id="start" (click)="onStart()">INICIAR PARTIDA</button>
       </nz-content>
     </nz-layout>
-    <nz-sider>
-        <img src="../../assets/QuestionMark.png" id="question">
-    </nz-sider>
 </nz-layout>
