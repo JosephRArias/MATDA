@@ -15,7 +15,7 @@ export class TimerService {
     },1000);
   }
   setTimer(time: number){
-    console.log(time);
+
     this.timeLeft = time;
   }
   constructor() { }

@@ -1,0 +1,182 @@
+[debug] [2020-10-16T17:12:33.684Z] ----------------------------------------------------------------------
+[debug] [2020-10-16T17:12:33.688Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\e0547470\AppData\Roaming\npm-cache\_npx\20128\node_modules\firebase-tools\lib\bin\firebase.js login
+[debug] [2020-10-16T17:12:33.689Z] CLI Version:   8.12.1
+[debug] [2020-10-16T17:12:33.689Z] Platform:      win32
+[debug] [2020-10-16T17:12:33.689Z] Node Version:  v10.15.3
+[debug] [2020-10-16T17:12:33.710Z] Time:          Fri Oct 16 2020 13:12:33 GMT-0400 (Bolivia Time)
+[debug] [2020-10-16T17:12:33.711Z] ----------------------------------------------------------------------
+[debug] [2020-10-16T17:12:33.711Z] 
+[info] i  Firebase optionally collects CLI usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[info] i  To change your data collection preference at any time, run `firebase logout` and log in again. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=108209008&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2020-10-16T17:23:09.813Z] >>> HTTP REQUEST POST https://accounts.google.com/o/oauth2/token  
+ {"code":"4/5QF0IyBaecRKDDACuqiYtUfssuJftiVyUX3DMQ2VChyuO7uxefa7Yh8YlYBhgy8uGU87E_1aLixVayyGhAEFo9c","client_id":"563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com","client_secret":"j9iVZfS8kkCEFUPaAeJV0sAi","redirect_uri":"http://localhost:9005","grant_type":"authorization_code"}
+[debug] [2020-10-16T17:23:10.512Z] Token Fetch Error: FirebaseError: Server Error. unable to get local issuer certificate
+    at Request._callback (C:\Users\e0547470\AppData\Roaming\npm-cache\_npx\20128\node_modules\firebase-tools\lib\api.js:32:31)
+    at self.callback (C:\Users\e0547470\AppData\Roaming\npm-cache\_npx\20128\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:189:13)
+    at Request.EventEmitter.emit (domain.js:441:20)
+    at Request.onRequestError (C:\Users\e0547470\AppData\Roaming\npm-cache\_npx\20128\node_modules\firebase-tools\node_modules\request\request.js:877:8)
+    at ClientRequest.emit (events.js:189:13)
+    at ClientRequest.EventEmitter.emit (domain.js:441:20)
+    at TLSSocket.socketErrorListener (_http_client.js:392:9)
+    at TLSSocket.emit (events.js:189:13)
+    at TLSSocket.EventEmitter.emit (domain.js:441:20)
+    at emitErrorNT (internal/streams/destroy.js:82:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:50:3)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+[debug] [2020-10-16T17:23:46.544Z] >>> HTTP REQUEST POST https://accounts.google.com/o/oauth2/token  
+ {"code":"4/0AfDhmriICPnODBToyXp5RPDhK4SQ-1JNwrYHBHB0wb-blS6_BywZ611uDBghpZe5c-awmA","client_id":"563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com","client_secret":"j9iVZfS8kkCEFUPaAeJV0sAi","redirect_uri":"http://localhost:9005","grant_type":"authorization_code"}
+[debug] [2020-10-16T17:23:47.174Z] Token Fetch Error: FirebaseError: Server Error. unable to get local issuer certificate
+    at Request._callback (C:\Users\e0547470\AppData\Roaming\npm-cache\_npx\20128\node_modules\firebase-tools\lib\api.js:32:31)
+    at self.callback (C:\Users\e0547470\AppData\Roaming\npm-cache\_npx\20128\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:189:13)
+    at Request.EventEmitter.emit (domain.js:441:20)
+    at Request.onRequestError (C:\Users\e0547470\AppData\Roaming\npm-cache\_npx\20128\node_modules\firebase-tools\node_modules\request\request.js:877:8)
+    at ClientRequest.emit (events.js:189:13)
+    at ClientRequest.EventEmitter.emit (domain.js:441:20)
+    at TLSSocket.socketErrorListener (_http_client.js:392:9)
+    at TLSSocket.emit (events.js:189:13)
+    at TLSSocket.EventEmitter.emit (domain.js:441:20)
+    at emitErrorNT (internal/streams/destroy.js:82:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:50:3)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+[debug] [2020-10-16T17:28:00.106Z] ----------------------------------------------------------------------
+[debug] [2020-10-16T17:28:00.111Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\e0547470\AppData\Roaming\npm-cache\_npx\42340\node_modules\firebase-tools\lib\bin\firebase.js login
+[debug] [2020-10-16T17:28:00.112Z] CLI Version:   8.12.1
+[debug] [2020-10-16T17:28:00.112Z] Platform:      win32
+[debug] [2020-10-16T17:28:00.112Z] Node Version:  v10.15.3
+[debug] [2020-10-16T17:28:00.131Z] Time:          Fri Oct 16 2020 13:28:00 GMT-0400 (Bolivia Time)
+[debug] [2020-10-16T17:28:00.131Z] ----------------------------------------------------------------------
+[debug] [2020-10-16T17:28:00.131Z] 
+[info] i  Firebase optionally collects CLI usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[info] i  To change your data collection preference at any time, run `firebase logout` and log in again. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=995157599&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2020-10-16T17:28:27.151Z] >>> HTTP REQUEST POST https://accounts.google.com/o/oauth2/token  
+ {"code":"4/5QG11pS7HF27p6v7Hy0B0nFdq5xL9o-4BJr35PKsFD4FdRaI1Unsc6HAUQOZEu0zi7UBCOJ40uuh6fzJsOgfK-8","client_id":"563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com","client_secret":"j9iVZfS8kkCEFUPaAeJV0sAi","redirect_uri":"http://localhost:9005","grant_type":"authorization_code"}
+[debug] [2020-10-16T17:28:27.704Z] Token Fetch Error: FirebaseError: Server Error. unable to get local issuer certificate
+    at Request._callback (C:\Users\e0547470\AppData\Roaming\npm-cache\_npx\42340\node_modules\firebase-tools\lib\api.js:32:31)
+    at self.callback (C:\Users\e0547470\AppData\Roaming\npm-cache\_npx\42340\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:189:13)
+    at Request.EventEmitter.emit (domain.js:441:20)
+    at Request.onRequestError (C:\Users\e0547470\AppData\Roaming\npm-cache\_npx\42340\node_modules\firebase-tools\node_modules\request\request.js:877:8)
+    at ClientRequest.emit (events.js:189:13)
+    at ClientRequest.EventEmitter.emit (domain.js:441:20)
+    at TLSSocket.socketErrorListener (_http_client.js:392:9)
+    at TLSSocket.emit (events.js:189:13)
+    at TLSSocket.EventEmitter.emit (domain.js:441:20)
+    at emitErrorNT (internal/streams/destroy.js:82:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:50:3)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+[debug] [2020-10-16T17:32:32.604Z] ----------------------------------------------------------------------
+[debug] [2020-10-16T17:32:32.608Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\e0547470\AppData\Roaming\npm-cache\_npx\45412\node_modules\firebase-tools\lib\bin\firebase.js login --no-localhost
+[debug] [2020-10-16T17:32:32.610Z] CLI Version:   8.12.1
+[debug] [2020-10-16T17:32:32.610Z] Platform:      win32
+[debug] [2020-10-16T17:32:32.610Z] Node Version:  v10.15.3
+[debug] [2020-10-16T17:32:32.633Z] Time:          Fri Oct 16 2020 13:32:32 GMT-0400 (Bolivia Time)
+[debug] [2020-10-16T17:32:32.633Z] ----------------------------------------------------------------------
+[debug] [2020-10-16T17:32:32.633Z] 
+[info] i  Firebase optionally collects CLI usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[info] i  To change your data collection preference at any time, run `firebase logout` and log in again. 
+[info] 
+[info] Visit this URL on any device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=452267183&redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob
+[info] 
+[debug] [2020-10-16T17:33:18.512Z] >>> HTTP REQUEST POST https://accounts.google.com/o/oauth2/token  
+ {"code":"4/5QHwwunrFIOGA8htjuRq7ZBRuBaM2UnLiBVEjeeT8fcEJ9w03BqQL1I","client_id":"563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com","client_secret":"j9iVZfS8kkCEFUPaAeJV0sAi","redirect_uri":"urn:ietf:wg:oauth:2.0:oob","grant_type":"authorization_code"}
+[debug] [2020-10-16T17:33:19.139Z] Token Fetch Error: FirebaseError: Server Error. unable to get local issuer certificate
+    at Request._callback (C:\Users\e0547470\AppData\Roaming\npm-cache\_npx\45412\node_modules\firebase-tools\lib\api.js:32:31)
+    at self.callback (C:\Users\e0547470\AppData\Roaming\npm-cache\_npx\45412\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:189:13)
+    at Request.EventEmitter.emit (domain.js:441:20)
+    at Request.onRequestError (C:\Users\e0547470\AppData\Roaming\npm-cache\_npx\45412\node_modules\firebase-tools\node_modules\request\request.js:877:8)
+    at ClientRequest.emit (events.js:189:13)
+    at ClientRequest.EventEmitter.emit (domain.js:441:20)
+    at TLSSocket.socketErrorListener (_http_client.js:392:9)
+    at TLSSocket.emit (events.js:189:13)
+    at TLSSocket.EventEmitter.emit (domain.js:441:20)
+    at emitErrorNT (internal/streams/destroy.js:82:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:50:3)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+[error] 
+[error] Error: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2020-10-16T17:37:46.597Z] ----------------------------------------------------------------------
+[debug] [2020-10-16T17:37:46.601Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\e0547470\AppData\Roaming\npm-cache\_npx\2224\node_modules\firebase-tools\lib\bin\firebase.js login --no-localhost
+[debug] [2020-10-16T17:37:46.602Z] CLI Version:   8.12.1
+[debug] [2020-10-16T17:37:46.602Z] Platform:      win32
+[debug] [2020-10-16T17:37:46.602Z] Node Version:  v10.15.3
+[debug] [2020-10-16T17:37:46.619Z] Time:          Fri Oct 16 2020 13:37:46 GMT-0400 (Bolivia Time)
+[debug] [2020-10-16T17:37:46.619Z] ----------------------------------------------------------------------
+[debug] [2020-10-16T17:37:46.619Z] 
+[info] i  Firebase optionally collects CLI usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[info] i  To change your data collection preference at any time, run `firebase logout` and log in again. 
+[info] 
+[info] Visit this URL on any device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=568804593&redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob
+[info] 
+[debug] [2020-10-16T17:39:11.573Z] >>> HTTP REQUEST POST https://accounts.google.com/o/oauth2/token  
+ {"code":"4/5QGP_YRLuj_R_4S6mnK8odxLCawRBsiYXYGZgHAsfvXvDGK1Lep5Teg","client_id":"563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com","client_secret":"j9iVZfS8kkCEFUPaAeJV0sAi","redirect_uri":"urn:ietf:wg:oauth:2.0:oob","grant_type":"authorization_code"}
+[debug] [2020-10-16T17:39:12.275Z] Token Fetch Error: FirebaseError: Server Error. unable to get local issuer certificate
+    at Request._callback (C:\Users\e0547470\AppData\Roaming\npm-cache\_npx\2224\node_modules\firebase-tools\lib\api.js:32:31)
+    at self.callback (C:\Users\e0547470\AppData\Roaming\npm-cache\_npx\2224\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:189:13)
+    at Request.EventEmitter.emit (domain.js:441:20)
+    at Request.onRequestError (C:\Users\e0547470\AppData\Roaming\npm-cache\_npx\2224\node_modules\firebase-tools\node_modules\request\request.js:877:8)
+    at ClientRequest.emit (events.js:189:13)
+    at ClientRequest.EventEmitter.emit (domain.js:441:20)
+    at TLSSocket.socketErrorListener (_http_client.js:392:9)
+    at TLSSocket.emit (events.js:189:13)
+    at TLSSocket.EventEmitter.emit (domain.js:441:20)
+    at emitErrorNT (internal/streams/destroy.js:82:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:50:3)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+[error] 
+[error] Error: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2020-10-16T17:42:03.701Z] ----------------------------------------------------------------------
+[debug] [2020-10-16T17:42:03.705Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\e0547470\AppData\Roaming\npm-cache\_npx\27792\node_modules\firebase-tools\lib\bin\firebase.js login --no-localhost --reauth
+[debug] [2020-10-16T17:42:03.705Z] CLI Version:   8.12.1
+[debug] [2020-10-16T17:42:03.706Z] Platform:      win32
+[debug] [2020-10-16T17:42:03.706Z] Node Version:  v10.15.3
+[debug] [2020-10-16T17:42:03.723Z] Time:          Fri Oct 16 2020 13:42:03 GMT-0400 (Bolivia Time)
+[debug] [2020-10-16T17:42:03.723Z] ----------------------------------------------------------------------
+[debug] [2020-10-16T17:42:03.723Z] 
+[info] 
+[info] Visit this URL on any device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=567406999&redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob
+[info] 
+[debug] [2020-10-16T17:42:45.623Z] >>> HTTP REQUEST POST https://accounts.google.com/o/oauth2/token  
+ {"code":"4/1AfDhmrjmC4sR9gXnWXv3xTQSEPdiSqNXy1SyJPIEjSi8vCkRRoEO1xqcjAE","client_id":"563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com","client_secret":"j9iVZfS8kkCEFUPaAeJV0sAi","redirect_uri":"urn:ietf:wg:oauth:2.0:oob","grant_type":"authorization_code"}
+[debug] [2020-10-16T17:42:46.252Z] Token Fetch Error: FirebaseError: Server Error. unable to get local issuer certificate
+    at Request._callback (C:\Users\e0547470\AppData\Roaming\npm-cache\_npx\27792\node_modules\firebase-tools\lib\api.js:32:31)
+    at self.callback (C:\Users\e0547470\AppData\Roaming\npm-cache\_npx\27792\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:189:13)
+    at Request.EventEmitter.emit (domain.js:441:20)
+    at Request.onRequestError (C:\Users\e0547470\AppData\Roaming\npm-cache\_npx\27792\node_modules\firebase-tools\node_modules\request\request.js:877:8)
+    at ClientRequest.emit (events.js:189:13)
+    at ClientRequest.EventEmitter.emit (domain.js:441:20)
+    at TLSSocket.socketErrorListener (_http_client.js:392:9)
+    at TLSSocket.emit (events.js:189:13)
+    at TLSSocket.EventEmitter.emit (domain.js:441:20)
+    at emitErrorNT (internal/streams/destroy.js:82:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:50:3)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+[error] 
+[error] Error: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
