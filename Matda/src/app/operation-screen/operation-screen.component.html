@@ -8,8 +8,8 @@
       reto: selected == 'reto'
     }"
   >
-  <div id="overlay1"><img src="../../assets/Group 3CorrectAnswer.png"></div>
-  <div id="overlay2"><img src="../../assets/Group 4IncorrectAnswer.png"></div>
+  <div id="overlay1"><img src="assets/Group 3CorrectAnswer.png"></div>
+  <div id="overlay2"><img src="assets/Group 4IncorrectAnswer.png"></div>
     <div id="label">
       <label for="Type" *ngIf="selected == 'sumaresta'">SUMA O RESTA</label>
       <label for="Type" *ngIf="selected == 'multidivi'"
@@ -20,7 +20,7 @@
       <label for="Type" *ngIf="selected == 'reto'">RETO</label>
     </div>
     <div class="card">
-      <img src="../../assets/GroupClock.png" />
+      <img src="assets/GroupClock.png" />
       <label for="Time" id="timer">{{ this.timer.timeLeft }}</label>
       <br />
       <br />
