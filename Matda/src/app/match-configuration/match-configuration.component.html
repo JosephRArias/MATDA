@@ -1,10 +1,10 @@
 <nz-layout>
     <nz-layout>
       <nz-header>
-        <img src="QuestionMark.png" id="question">
+        <img src="/assets/MatdaLogo.png" id="question">
       </nz-header>
       <nz-content>
-          <img src="MatdaLogo.png" id="Logo">
+          <img src="/assets/MatdaLogo.png" id="Logo">
           <br>
         <label for="Difficulty">Dificultad</label>
         <nz-space [nzSize]="size" nzDirection = "horizontal">
@@ -30,11 +30,11 @@
         <label for="Time">Tiempo</label>
         <nz-space [nzSize]="14" nzDirection = "horizontal" id="time">
             <nz-space-item>
-                <button nz-button nzType="primary" nzShape="round" id="add" (click) = "modifyTimer('add')"><img src="../../assets/VectorAddSign.png" id="addSign"></button>
+                <button nz-button nzType="primary" nzShape="round" id="add" (click) = "modifyTimer('add')"><img src="/assets/VectorAddSign.png" id="addSign"></button>
             </nz-space-item>
             <label for="Timer">{{time}} seg</label>
             <nz-space-item>
-                <button nz-button nzType="primary" nzShape="round" id="sustract" (click) = "modifyTimer('sus')"><img src="../../assets/VectorSustractSign.png" id="sustractSign"></button>
+                <button nz-button nzType="primary" nzShape="round" id="sustract" (click) = "modifyTimer('sus')"><img src="/assets/VectorSustractSign.png" id="sustractSign"></button>
             </nz-space-item>
         </nz-space>
         <br>
