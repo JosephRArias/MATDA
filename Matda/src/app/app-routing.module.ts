@@ -12,7 +12,7 @@ const routes: Routes = [
   {path: 'match-configuration', component: MatchConfigurationComponent, canActivate: [MatchGuard]},
   {path: 'match-process', component: MatchInProcessComponent, canActivate: [MatchGuard]},
   {path: 'terminate-match', component: TerminateMatchComponent, canActivate: [MatchGuard]},
-  {path: 'operation', component: OperationScreenComponent, canActivate: [MatchGuard]}
+  {path: 'operation/:op', component: OperationScreenComponent, canActivate: [MatchGuard]}
 ];
 
 @NgModule({

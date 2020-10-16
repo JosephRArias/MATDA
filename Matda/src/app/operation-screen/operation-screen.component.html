@@ -1,18 +1,38 @@
 <nz-layout>
-<nz-content [ngClass]="{
-  'add' : selected == 'SR',
-  'multiply' : selected == 'MD',
-  'mix' : selected == 'Mix',
-  'lib' : selected == 'Lib'
-}">
-<div id="label">
-<label for="Type" *ngIf="selected == 'SR'">SUMA O RESTA</label>
-<label for="Type" *ngIf="selected == 'MD'">MULTIPLICACIÓN O DIVISIÓN</label>
-<label for="Type" *ngIf="selected == 'MIX'">MIXTA</label>
-<label for="Type" *ngIf="selected == 'LIB'">LIBRE</label>
-</div>
-<div class="card">
-  <img src="../../assets/GroupClock.png">
-<labeL for="Time" id="timer">{{this.timer.timeLeft}}</labeL>
-</div></nz-content>
+  <nz-content
+    [ngClass]="{
+      add: selected == 'sumaresta',
+      multiply: selected == 'multidivi',
+      mix: selected == 'mix',
+      lib: selected == 'lib',
+      reto: selected == 'reto'
+    }"
+  >
+    <div id="label">
+      <label for="Type" *ngIf="selected == 'sumaresta'">SUMA O RESTA</label>
+      <label for="Type" *ngIf="selected == 'multidivi'"
+        >MULTIPLICACIÓN O DIVISIÓN</label
+      >
+      <label for="Type" *ngIf="selected == 'mix'">MIXTA</label>
+      <label for="Type" *ngIf="selected == 'lib'">LIBRE</label>
+      <label for="Type" *ngIf="selected == 'reto'">RETO</label>
+    </div>
+    <div class="card">
+      <img src="../../assets/GroupClock.png" />
+      <label for="Time" id="timer">{{ this.timer.timeLeft }}</label>
+      <br />
+      <br />
+      <div id="reto">{{dare}}</div>
+      <div *ngIf="exercise != 'reto'" id="exercise">
+        <nz-space [nzSize]="10" nzAlign="center">
+          <nz-space-item *ngFor="let data of separated">
+            <div *ngIf="data == '_'">
+              <nz-input-number [nzStep]="1" [(ngModel)]  = "number"></nz-input-number>
+            </div>
+            <div *ngIf="data != '_'">{{ data }}</div>
+          </nz-space-item>
+        </nz-space>
+      </div>
+    </div>
+  </nz-content>
 </nz-layout>

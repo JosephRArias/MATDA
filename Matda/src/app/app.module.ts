@@ -20,6 +20,11 @@ import { NzRadioModule } from 'ng-zorro-antd/radio';
 import { MatchInProcessComponent } from './match-in-process/match-in-process.component';
 import { TerminateMatchComponent } from './terminate-match/terminate-match.component';
 import { OperationScreenComponent } from './operation-screen/operation-screen.component';
+import { AngularFireModule } from '@angular/fire';
+import { environment } from 'src/environments/environment';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { NzInputNumberModule } from 'ng-zorro-antd/input-number';
+import { NzInputModule } from 'ng-zorro-antd/input';
 registerLocaleData(en);
 
 @NgModule({
@@ -41,7 +46,11 @@ registerLocaleData(en);
     NzButtonModule,
     NzBreadCrumbModule,
     NzSpaceModule,
-    NzRadioModule
+    NzRadioModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireDatabaseModule,
+    NzInputNumberModule,
+    NzInputModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }, MatchGuard],
   bootstrap: [AppComponent]

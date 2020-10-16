@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, NgZone, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { TimerService } from '../services/timer.service';
 
@@ -12,7 +12,7 @@ export class MatchConfigurationComponent implements OnInit {
   size: number;
   selected: string;
   time: number;
-  constructor(private router: Router, private timer: TimerService) { }
+  constructor(private router: Router, private timer: TimerService, private zone: NgZone) { }
 
   ngOnInit(): void {
     this.size = 14;
@@ -31,7 +31,7 @@ export class MatchConfigurationComponent implements OnInit {
     }
   }
   onStart(){
-    this.router.navigate(['/match-process']);
+    this.router.navigateByUrl('/match-process');
     this.timer.setTimer(this.time);
   }
 }

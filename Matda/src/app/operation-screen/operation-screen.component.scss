@@ -10,6 +10,15 @@ nz-content {
 .multiply{
   background-color: $background-multiply;
 }
+.mix{
+  background-color: $background-mix;
+}
+.lib{
+  background-color: $background-lib;
+}
+.reto{
+  background-color: $background-dare;
+}
 .card{
   border-radius: 25px;
   height: 304.70001220703125px;
@@ -25,10 +34,19 @@ label{
   font-size: 40px;
   line-height: 70px;
   color: #FFFFFF;
-
 }
 #label{
   text-align: center;
+}
+#exercise, #reto{
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 70px;
+  color: #000000;
+  margin: 5px;
 }
 img{
   margin-left: 2.38%;
@@ -38,4 +56,16 @@ img{
   color: #000000;
   font-size: 30px;
   margin-left: 10px;
+}
+nz-input-number{
+  width: 100%;
+  height: 60px;
+  /* padding: 0 11px; */
+  text-align: center;
+  background-color: transparent;
+  border-radius: 2px;
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
 }
